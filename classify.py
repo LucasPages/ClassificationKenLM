@@ -44,6 +44,6 @@ for line in blogs:
     max_index = get_max_index(score0, score1, score2)
     results.append(max_index)
 
-with open("../out/" + args.n + "grams.out", "wb+") as f:
+with open("out/" + args.n + "grams.out", "wb+") as f:
     pickle.dump(results, f)
 
